@@ -1,27 +1,21 @@
 import { NgModule } from "@angular/core";
-import { WelcomeComponent } from './welcome/welcome.component';
+import { RouterModule, Routes } from '@angular/router';
 
-import {
-  Routes,
-  RouterModule,
-  NoPreloading,
-  PreloadAllModules
-} from "@angular/router";
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   {
-      path: '',
-    component: WelcomeComponent
+    path: '',
+    component: WelcomeComponent,
   }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, {
-      scrollPositionRestoration: "enabled",
-      preloadingStrategy: PreloadAllModules
-    })
+    RouterModule.forChild(routes)
   ],
-  exports: [RouterModule]
+  exports: [
+    RouterModule
+  ]
 })
-export class HomeRoutingModule {}
+export class HomeRoutingModule { }
