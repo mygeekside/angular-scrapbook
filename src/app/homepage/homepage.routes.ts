@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { WelcomeComponent } from './welcome/welcome.component';
 
 import {
   Routes,
@@ -23,4 +24,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class HomeRoutingModule {}
