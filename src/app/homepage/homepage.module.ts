@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WelcomeComponent } from './welcome/welcome/welcome.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
