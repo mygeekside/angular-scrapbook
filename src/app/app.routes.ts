@@ -10,11 +10,19 @@ import {
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "home",
+    redirectTo: "welcome",
     pathMatch: "full"
   },
   {
-    path: "home",
+    path: "welcome",
+    loadChildren: "./homepage/homepage.module#HomepageModule"
+  },
+  {
+    path: "news",
+    loadChildren: "./homepage/homepage.module#HomepageModule"
+  },
+    {
+    path: "contact",
     loadChildren: "./homepage/homepage.module#HomepageModule"
   }
 ];
