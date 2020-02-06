@@ -6,7 +6,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./stopwatch.component.css"]
 })
 export class StopwatchComponent implements OnInit {
-  currtimer = 10;
+  hour = 0;
+  // minute = 0;
+  // currtimer = 0;
+  currtimer = 0;
+  sdate=new Date().getMilliseconds();
+
   id;
 
   constructor() {}
@@ -16,7 +21,8 @@ export class StopwatchComponent implements OnInit {
   start() {
     this.id = setInterval(() => {
       if (this.currtimer > 0) this.currtimer--;
-    }, 1000);
+      this.sdate=new Date().getMilliseconds();
+    }, 1);
   }
 
   stop() {
