@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: "clock",
     loadChildren: "./clock/clock.module#ClockModule"
+  },
+    {
+    path: "stopwatch",
+    loadChildren: "./stopwatch/stopwatch.module#StopwatchModule"
   }
 ];
 
