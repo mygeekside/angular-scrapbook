@@ -24,6 +24,10 @@ const routes: Routes = [
     {
     path: "contact",
     loadChildren: "./homepage/homepage.module#HomepageModule"
+  },
+  {
+    path: "home",
+    loadChildren: "./homepage/homepage.module#HomepageModule"
   }
 ];
 
