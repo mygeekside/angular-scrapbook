@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   constructor(public router: Router) { }
 
   gotoPage(name) {
-    this.router.navigate([name]);
+    this.router.navigate(["welcome/"+name]);
   }
 
   ngOnInit() {
