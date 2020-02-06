@@ -11,10 +11,23 @@ export class StopwatchComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  start() {
     this.id = setInterval(() => {
       if (this.currtimer > 0) this.currtimer--;
     }, 1000);
+  }
+
+  stop() {
+    if (this.id) {
+      clearInterval(this.id);
+    }
+  }
+
+  reset() {
+    this.stop();
+    this.currtimer=20;
   }
 
   ngOnDestroy() {

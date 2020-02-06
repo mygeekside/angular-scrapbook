@@ -10,7 +10,7 @@ import {
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "welcome",
+    redirectTo: "stopwatch",
     pathMatch: "full"
   },
   {
