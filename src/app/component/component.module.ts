@@ -11,5 +11,6 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
     CommonModule
   ],
   declarations: [FooterComponent, NavbarComponent, SearchbarComponent]
+  exports: [FooterComponent, NavbarComponent, SearchbarComponent]
 })
 export class ComponentModule { }
