@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './digiclock.component.html',
   styleUrls: ['./digiclock.component.css']
 })
+
 export class DigiclockComponent implements OnInit {
+
+
+  currtime = new Date();
+
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
-}
+} 
