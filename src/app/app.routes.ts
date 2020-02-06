@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: "welcome",
     loadChildren: "./homepage/homepage.module#HomepageModule"
+  },
+  {
+    path: "clock",
+    loadChildren: "./clock/clock.module#ClockModule"
   }
 ];
 
